@@ -10,8 +10,8 @@ existing algorithms and measure the performance of sequential and parallel algor
 3. Implement Min, Max, Sum and Average operations using Parallel Reduction.
 
 4. Write a CUDA Program for :
-1. Addition of two large vectors
-2. Matrix Multiplication using CUDA Cand DL codes
+ Addition of two large vectors
+ Matrix Multiplication using CUDA Cand DL codes
 
 _________________________________________________________________________________________________
 

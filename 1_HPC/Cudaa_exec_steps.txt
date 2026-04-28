@@ -1,0 +1,22 @@
+1.Open Google Colab
+
+2.Take new notebook
+
+3.Start a program with following line %%writefile programname.cu
+
+4. Write the code
+
+5. Change the runfile Go to runtime Go to change runtime type Select GPU-(T4 GPU) option and save.
+
+6.Compile using:
+                !nvcc Filename.cu -o run
+
+7.Run:
+    !./run
+
+For path settings:
+Commands-
+     
+    !rm -rf /usr/local/cuda
+    !ln -s /usr/local/cuda-12.2 /usr/local/cuda
+    

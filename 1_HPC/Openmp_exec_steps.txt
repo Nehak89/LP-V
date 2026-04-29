@@ -13,6 +13,8 @@ ________________Steps to run Openmp codes________________________
 
 5.Execute it using:
                  run.exe
+                 OR
+                 .\run.exe
 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 OpenMP is a library that allows a program to run multiple parts simultaneously (parallel execution) using 

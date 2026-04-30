@@ -46,26 +46,44 @@ void pm(vector<int>& a,int l,int r){
 }
 
 int main(){
-    int n; cin>>n;
-    vector<int>a(n),b1,c,d;
+    int n;
+    cout<<"Enter size: ";
+    cin>>n;
+
+    vector<int>a(n),b,c,d;
+
+    cout<<"Enter elements: ";
     for(int i=0;i<n;i++) cin>>a[i];
-    b1=c=d=a;
+
+    cout<<"\nOriginal Array: ";
+    print(a);
+
+    b=c=d=a;
 
     double t;
 
-    t=omp_get_wtime(); b(b1);
-    cout<<"Bub Seq "<<omp_get_wtime()-t<<"\n";
+    t=omp_get_wtime(); bubble(b);
+    cout<<"\nSorted (Sequential Bubble): ";
+    print(b);
+    cout<<"Time: "<<omp_get_wtime()-t<<"\n";
 
-    t=omp_get_wtime(); pb(c);
-    cout<<"Bub Par "<<omp_get_wtime()-t<<"\n";
+    t=omp_get_wtime(); pbubble(c);
+    cout<<"\nSorted (Parallel Bubble): ";
+    print(c);
+    cout<<"Time: "<<omp_get_wtime()-t<<"\n";
 
     t=omp_get_wtime(); m(a,0,n-1);
-    cout<<"Mer Seq "<<omp_get_wtime()-t<<"\n";
+    cout<<"\nSorted (Sequential Merge): ";
+    print(a);
+    cout<<"Time: "<<omp_get_wtime()-t<<"\n";
 
-    t=omp_get_wtime(); pm(d,0,n-1);
-    cout<<"Mer Par "<<omp_get_wtime()-t;
+    t=omp_get_wtime(); pmsort(d,0,n-1);
+    cout<<"\nSorted (Parallel Merge): ";
+    print(d);
+    cout<<"Time: "<<omp_get_wtime()-t<<"\n";
+
+    return 0;
 }
-
 /*
 Input-
 Enter size : 5

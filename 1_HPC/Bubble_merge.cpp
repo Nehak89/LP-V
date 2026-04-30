@@ -110,14 +110,22 @@ int main(){
 }
 /*
 Input-
-Enter size : 5
-Enter elements : 5 3 1 4 2
+Enter size: 5
+Enter elements: 2 4 1 9 7
+Original Array: 2 4 1 9 7 
 
 Output-
-Bub Seq: 0.00001
-Bub Par: 0.00002
-Mer Seq: 0.000005
-Mer Par: 0.000003
+Sorted (Sequential Bubble): 1 2 4 7 9 
+Time: 0.00200009
+
+Sorted (Parallel Bubble): 1 2 4 7 9 
+Time: 0.0110002
+
+Sorted (Sequential Merge): 1 2 4 7 9 
+Time: 0.00199986
+
+Sorted (Parallel Merge): 1 2 4 7 9 
+Time: 0.000999928
 
 ----------------------------------------------------------------------------
 

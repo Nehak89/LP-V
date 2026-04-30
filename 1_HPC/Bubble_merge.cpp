@@ -64,7 +64,9 @@ int main(){
 
     t=omp_get_wtime(); pm(d,0,n-1);
     cout<<"Mer Par "<<omp_get_wtime()-t;
-}/*
+}
+
+/*
 Input-
 Enter size : 5
 Enter elements : 5 3 1 4 2
